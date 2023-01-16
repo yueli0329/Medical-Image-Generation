@@ -1,6 +1,6 @@
 # Medical-Image-Generation
 
-This project is about image color normalization, Pix2Pix (cGAN) is used	for stain transfer. Pix2Pix is a conditional GAN (cGAN) set up as a pairwise image translation algorithm. The pair consists of a target image and an input condition/label image which is passed to the generator. It should be noted that unlike the cGAN the input is an image, not a noise+label vector. 
+This project is about image color normalization, Pix2Pix (cGAN) is used	for stain transfer. Pix2Pix is a conditional GAN (cGAN) set up as a pairwise image translation algorithm. The pair consists of a target image and an input condition/label image which is passed to the generator. It should be noted that unlike the cGAN the input is an image, not a noise+label vector. Reference the project from Kaggle.[link](https://www.kaggle.com/code/shir0mani/stain-transfer-w-pix2pix-pytorch-lightning)
 
 ##  Data Resource
 The dataset used for this project is a dataset from Kaggle. The original dataset consisted of 162 whole mount slide images of Breast Cancer (BCa) specimens scanned at 40x.[link](https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images)
