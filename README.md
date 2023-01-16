@@ -3,7 +3,7 @@
 This project is about image color normalization, Pix2Pix (cGAN) is used	for stain transfer. Pix2Pix is a conditional GAN (cGAN) set up as a pairwise image translation algorithm. The pair consists of a target image and an input condition/label image which is passed to the generator. It should be noted that unlike the cGAN the input is an image, not a noise+label vector. 
 
 ##  Data Resource
-This data set is an IMDb movie extensive data set from Kaggle.[link](https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset)
+The dataset used for this project is a dataset from Kaggle. The original dataset consisted of 162 whole mount slide images of Breast Cancer (BCa) specimens scanned at 40x.[link](https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images)
 
 ## Neural Network Architecture 
 The components of Pix2Pix architecture are a follows: <br>
@@ -17,8 +17,11 @@ The network is trained using most of the same parameters as the original Pix2Pix
 **Evaluation**: We plot the target image and generated image during the training cycle. In real world implementations, the target image and generated image are compared using metrics such as PSNR, SSIM as well as human visual perception. The generated image can also be validated on a clinical use-case such as classification.<br>
 
 ## Results
-We implemented Pix2Pix to our Tissue slice dataset. We selected 20,000 images from the train set to train the network. Since the training process was really time consuming, the epoch was set to 6. In Figure 17,  the results were shown. The input of the generator is a grayscale image and output of the generator is a colored image. After three epochs, the generated image was more detailed and intense in color.  Therefore, this Pix2Pix method can help to normalize the color of the stained images in the train set. 
+We implemented Pix2Pix to our Tissue slice dataset. We selected 20,000 images from the train set to train the network. Since the training process was really time consuming, the epoch was set to 6. In Figure 17,  the results were shown. The input of the generator is a grayscale image and output of the generator is a colored image. After three epochs, the generated image was more detailed and intense in color.  Therefore, this Pix2Pix method can help to normalize the color of the stained images in the train set. <br>
 
+![Main](https://media.giphy.com/media/wKoPDy4mp8Lr6IJ9ce/giphy.gif)
+![Main](https://media.giphy.com/media/wKoPDy4mp8Lr6IJ9ce/giphy.gif)
+![Main](https://media.giphy.com/media/wKoPDy4mp8Lr6IJ9ce/giphy.gif)
 
 ## Files
 - Code: python file contains training and evaluation process
