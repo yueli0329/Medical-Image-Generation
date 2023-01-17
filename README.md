@@ -13,11 +13,11 @@ Here the RGB color and corresponding grayscale transform of an image tile serve 
 
 ## Experiments
 **Training**: Color/grayscale image pairs are derived from the H&E stained PCam dataset. The grayscale images serve as input to the generator. The generator outputs stained color images. The discriminator has two input pairs: the generated image/grayscale image pair serves as the fake input, the color/grayscale image pair is the real input. See the figure below.<br>
-The network is trained using most of the same parameters as the original Pix2Pix paper. The structure of Pix2Pix is shown in Figure16. 
+The network is trained using most of the same parameters as the original Pix2Pix paper.<br>
 **Evaluation**: We plot the target image and generated image during the training cycle. In real world implementations, the target image and generated image are compared using metrics such as PSNR, SSIM as well as human visual perception. The generated image can also be validated on a clinical use-case such as classification.<br>
 
 ## Results
-We implemented Pix2Pix to our Tissue slice dataset. We selected 20,000 images from the train set to train the network. Since the training process was really time consuming, the epoch was set to 6. In Figure 17,  the results were shown. The input of the generator is a grayscale image and output of the generator is a colored image. After three epochs, the generated image was more detailed and intense in color.  Therefore, this Pix2Pix method can help to normalize the color of the stained images in the train set. <br>
+We implemented Pix2Pix to our Tissue slice dataset. We selected 20,000 images from the train set to train the network. Since the training process was really time consuming, the epoch was set to 6. The results were shown. The input of the generator is a grayscale image and output of the generator is a colored image. After three epochs, the generated image was more detailed and intense in color.  Therefore, this Pix2Pix method can help to normalize the color of the stained images in the train set. <br>
 
 ![Main](https://github.com/yueli0329/Medical-Image-Generation/blob/main/Fake%20image%20-%20Epoch%201.jpeg)
 
