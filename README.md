@@ -20,8 +20,6 @@ The network is trained using most of the same parameters as the original Pix2Pix
 We implemented Pix2Pix to our Tissue slice dataset. We selected 20,000 images from the train set to train the network. Since the training process was really time consuming, the epoch was set to 6. In Figure 17,  the results were shown. The input of the generator is a grayscale image and output of the generator is a colored image. After three epochs, the generated image was more detailed and intense in color.  Therefore, this Pix2Pix method can help to normalize the color of the stained images in the train set. <br>
 
 ![Main](https://github.com/yueli0329/Medical-Image-Generation/blob/main/Fake%20image%20-%20Epoch%201.jpeg)
-![Main](https://media.giphy.com/media/wKoPDy4mp8Lr6IJ9ce/giphy.gif)
-![Main](https://media.giphy.com/media/wKoPDy4mp8Lr6IJ9ce/giphy.gif)
 
 ## Files
 - Code: python file contains training and evaluation process
